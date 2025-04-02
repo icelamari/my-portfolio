@@ -247,6 +247,33 @@ footer {
 
 .video-container {
     display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    /* Smooth scrolling */
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.video-container video {
+    flex: 0 0 auto;
+    /* Prevents shrinking */
+    width: 30%;
+    /* Fit three videos per screen */
+    max-width: 300px;
+    /* Optional limit */
+    scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+    .video-container video {
+        width: 100%;
+    }
+}
+
+/* .video-container {
+    display: flex;
     justify-content: center;
     gap: 20px;
 }
@@ -255,7 +282,7 @@ footer {
     width: 100px;
     height: 70px;
 }
-
+ */
 /* Services Offered */
 
 .container {
