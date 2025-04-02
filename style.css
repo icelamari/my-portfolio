@@ -184,7 +184,7 @@ section .content {
 .images img:nth-child(2) {
     position: absolute;
     margin: 8px;
-    width: 500px;
+    width: 700px;
 }
 
 @media (max-width:768px) {
