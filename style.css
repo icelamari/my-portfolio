@@ -338,7 +338,7 @@ section {
 }
 
 .skills .content .col-right .bar .php::before {
-    width: 65%;
+    width: 85%;
     background-color: #6d7eb8;
 }
 
